@@ -12,8 +12,10 @@ app.use(bodyParser.json());
 
 
 app.use('/api/subject' , require('./routes/subject.js'));
-app.use('/api/subject' , require('./routes/contact.js'));
+app.use('/api/contact' , require('./routes/contact.js'));
+app.use('/api/subscribe' , require('./routes/subscribe.js'));
+
 
 app.listen(PORT, ()  => {
-    console.log("Server running at http://loclhost:" + PORT);
+    console.log("Server running at http://localhost:" + PORT);
 })
